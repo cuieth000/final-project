@@ -1,0 +1,26 @@
+
+Introduction
+
+India have many popular tourist destinations.Tourism sector produces good revenue for Indian Government in a fiscal year. These places not only attracts tourists but also small and large business owners.These place provides them with lucrative oppurtinity to extend their business.There are many restaurants and hotels nearby famous tourist spots.
+
+We will recommend our client the best location to open a restaurant in one of two famous tourist destination i.e. either Taj Mahal in Agra or India Gate in New Delhi. To achieve a good start for any new business, it is important to accurately define market requirements. Business is most likely to succeed if there is less competition and more demand of product by consumer. Our target here is to calculate number of restaurants in 1km radius of both places and compare it to find best location.
+Background on places to compare
+Taj Mahal
+
+An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture.
+India Gate
+
+India Gate, official name Delhi Memorial, originally called All-India War Memorial, monumental sandstone arch in New Delhi, dedicated to the troops of British India who died in wars fought between 1914 and 1919. India Gate, which is located at the eastern end of the Rajpath (formerly called the Kingsway), is about 138 feet (42 metres) in height.
+Objective
+
+    Calculate the number of restaurants in 1km radius of Taj Mahal and India Gate.
+    Visualise the data.
+    Compare data to recommend the best location to open a restaurant.
+
+Data
+
+We will use Geocoders from Geopy to find the latitude and longitude coordinates of Taj Mahal and India Gate. We will use Foursquare API to solve the business problem.So we will call Foursquare API using CLIENT_ID and CLIENT_SECRET. We will use latitude and longitude coordinates of both places using Foursquare location data to find all the restaurants and their location in 1 km radius of these places. The response will be as a json file for each location and we will get the expected dataframes from the json file using json_normalize.
+
+We will filter the dataframe using various python libraries and visualise data.The json data is converted to a pandas dataframe.The data is then cleaned.
+
+In this project we will be calculate this data to find the best location to start a restaurant. We use folium to viualise data.Finally Pandas Dataframe is created to compare data of both location. Example of Foursquare API we use here call- 'https://api.foursquare.com/v2/venues/search?client_id={}&client_secret={}&ll={},{}&v={}&query={}&radius={}&limit={}'
